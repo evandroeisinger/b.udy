@@ -33,8 +33,10 @@ function b (element) {
         return this;
     }
 
-    function setData (key, value) {
-        return this.attr('data-' + key, value);
+    function unsetAttr (key) {
+        this.__element.removeAttribute(key);
+
+        return this;
     }
 
     function returnElement () {
@@ -46,9 +48,9 @@ function b (element) {
         id: setId,
         className: setClassName,
         attr: setAttr,
-        data: setData,
-        on: setListener,
-        off: unsetListener,
+        removeAttr: unsetAttr,
+        listener: setListener,
+        removeListener: unsetListener,
         element: returnElement,
     }
 }
