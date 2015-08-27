@@ -1,6 +1,6 @@
 ## b.udy.js  :dog2:
 
-> A micro DOM library! With only one purpose: facilitate the creation and manipulation of DOM elements.
+> A micro (**0.8kb**) DOM library! With only one purpose: facilitate the creation and manipulation of DOM elements.
 
 [![npm version](https://badge.fury.io/js/b.udy.js.svg)](http://badge.fury.io/js/b.udy.js) [![Build Status](https://travis-ci.org/evandroeisinger/b.udy.js.svg?branch=master)](https://travis-ci.org/evandroeisinger/b.udy.js)
 
