@@ -16,9 +16,15 @@ function b (element) {
     }
 
     function setClassName (value) {
-        this.__element.className = value.replace(/\s+/g, ' ');
+        this.__element.className = value.replace(/\s+/g, ' ').trim();
 
         return this;
+    }
+
+    function setId (value) {
+        this.__element.id = value;
+
+        return this
     }
 
     function setAttr (key, value) {
@@ -31,10 +37,6 @@ function b (element) {
         return this.attr('data-' + key, value);
     }
 
-    function setId (value) {
-        return this.attr('id', value);
-    }
-
     function returnElement () {
         return this.__element;
     }
@@ -45,8 +47,8 @@ function b (element) {
         className: setClassName,
         attr: setAttr,
         data: setData,
-        listen: setListener,
-        unlisten: unsetListener,
+        on: setListener,
+        off: unsetListener,
         element: returnElement,
     }
 }
