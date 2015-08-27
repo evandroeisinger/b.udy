@@ -1,4 +1,4 @@
-## b.udy.js :dog2:  [![npm version](https://badge.fury.io/js/b.udy.js)](http://badge.fury.io/js/b.udy.js) [![Build Status](https://travis-ci.org/evandroeisinger/b.udy.js.svg?branch=master)](https://travis-ci.org/evandroeisinger/b.udy.js)
+## b.udy.js :dog2:  [![npm version](https://badge.fury.io/js/b.udy.js.svg)](http://badge.fury.io/js/b.udy.js) [![Build Status](https://travis-ci.org/evandroeisinger/b.udy.js.svg?branch=master)](https://travis-ci.org/evandroeisinger/b.udy.js)
 
 > A micro DOM library! With only one purpose: facilitate the creation and manipulation of DOM elements.
 
@@ -10,30 +10,29 @@ npm install b.udy.js
 ```javascript
 // load b.udy
 var b = require('b.udy');
-var element;
 
 // to create a element and return it
-element = b('div').element();
+var element;element = b('div').element();
 
 // to load a existing element
 b(element);
 
-// to set a element id
+// to set element id
 b(element).id('element-id');
 
-// to set a element className
+// to set element className
 b(element).className('element-class other-element-class');
 
-// to set a element attribute
+// to add element attribute
 b(element).attr('data-type', 'div');
 
-// to unset a element attribute
+// to remove element attribute
 b(element).removeAttr('data-type', 'div');
 
-// to set a element listener
+// to add element listener
 b(element).listener('click', clickListener);
 
-// to unset a element listener
+// to remove element listener
 b(element).removeListener('click', clickListener);
 
 // to set multiple properties
@@ -41,7 +40,7 @@ b(element).id('element').className('element-class').listener('click', clickListe
 ```
 
 ### methods
-- b***(nodeType | element)***: Create or load a DOM element;
+- b**(nodeType | element)**: Create or load a DOM element;
 - b.**element()**: Return the DOM element;
 - b.**id(value)**: Set the DOM element id;
 - b.**className(value)**: Set the DOM element className;
