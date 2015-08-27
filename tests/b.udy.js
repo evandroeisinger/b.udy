@@ -63,20 +63,19 @@ describe('b.udy', function () {
       expect(b('div').attr('class', 'test').element().getAttribute('class')).toEqual('test');
     });
 
-    it('should set a element data attr', function () {
-      expect(b('div').data('info', 'test').element().getAttribute('data-info')).toEqual('test');
+    it('should unset a element attr', function () {
+      var element = document.createElement('div');
+      element.setAttribute('test', '123');
+
+      expect(b(element).removeAttr('test').element().getAttribute('test')).toEqual(null);
     });
 
     it('should override a element attr', function () {
       var element = document.createElement('div');
       element.setAttribute('test', '123');
-      element.setAttribute('data-test', '123');
 
       expect(b(element).element().getAttribute('test')).not.toEqual('321');
       expect(b(element).attr('test', 321).element().getAttribute('test')).toEqual('321');
-
-      expect(b(element).element().getAttribute('data-test')).not.toEqual('321');
-      expect(b(element).data('test', 321).element().getAttribute('data-test')).toEqual('321');
     });
   });
 
@@ -91,7 +90,7 @@ describe('b.udy', function () {
     it('should set a listener into element', function () {
       var counter = 0;
       var clickLitener = function () { counter++;};
-      var element = b('div').on('click', clickLitener).element();
+      var element = b('div').listener('click', clickLitener).element();
 
       emitEvent(element, 'click');
       expect(counter).toBe(1);
@@ -102,8 +101,8 @@ describe('b.udy', function () {
       var clickLitener = function () { counter++;};
       var element = b('div').element();
 
-      b(element).on('click', clickLitener);
-      b(element).off('click', clickLitener);
+      b(element).listener('click', clickLitener);
+      b(element).removeListener('click', clickLitener);
       emitEvent(element, 'click');
 
       expect(counter).toBe(0);
