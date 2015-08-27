@@ -7,7 +7,7 @@
     "karma-webpack": "^1.7.0"
   },
   "name": "b.udy.js",
-  "description": "Lightweight DOM library",
+  "description": "Lightweight DOM manipulation library",
   "main": "b.udy.js",
   "version": "0.0.0",
   "directories": {
