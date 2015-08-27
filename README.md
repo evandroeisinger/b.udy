@@ -1,6 +1,8 @@
-##  :dog2: b.udy.js [![npm version](https://badge.fury.io/js/b.udy.js.svg)](http://badge.fury.io/js/b.udy.js) [![Build Status](https://travis-ci.org/evandroeisinger/b.udy.js.svg?branch=master)](https://travis-ci.org/evandroeisinger/b.udy.js)
+## b.udy.js  :dog2:
 
 > A micro DOM library! With only one purpose: facilitate the creation and manipulation of DOM elements.
+
+[![npm version](https://badge.fury.io/js/b.udy.js.svg)](http://badge.fury.io/js/b.udy.js) [![Build Status](https://travis-ci.org/evandroeisinger/b.udy.js.svg?branch=master)](https://travis-ci.org/evandroeisinger/b.udy.js)
 
 ```shell
 npm install b.udy.js
@@ -12,7 +14,7 @@ npm install b.udy.js
 var b = require('b.udy');
 
 // to create a element and return it
-var element;element = b('div').element();
+var element = b('div').element();
 
 // to load a existing element
 b(element);
@@ -60,4 +62,4 @@ b(element).id('element').className('element-class').listener('click', clickListe
 Everyone can contribute! Finding bugs, creating issues, improving documentation, improving editor it self or creating components.
 Every contribution will be welcomed! :santa:
 
-**Fork it** -> **Branch it** -> **Test it** -> **Push it** -> **Pull Request it** :gem:
+**Fork it** -> **Branch it** -> **Test it** -> **Push it** -> **Pull Request it**
