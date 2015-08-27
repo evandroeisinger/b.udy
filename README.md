@@ -14,7 +14,7 @@ npm install b.udy.js
 var b = require('b.udy');
 
 // to create a element and return it
-var element;element = b('div').element();
+var element = b('div').element();
 
 // to load a existing element
 b(element);
