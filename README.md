@@ -1,8 +1,8 @@
-## b.udy.js :dog2:  [![npm version](https://badge.fury.io/js/b.udy.js.svg)](http://badge.fury.io/js/b.udy.js) [![Build Status](https://travis-ci.org/evandroeisinger/b.udy.js.svg?branch=master)](https://travis-ci.org/evandroeisinger/b.udy.js)
+##  :dog2: b.udy.js [![npm version](https://badge.fury.io/js/b.udy.js.svg)](http://badge.fury.io/js/b.udy.js) [![Build Status](https://travis-ci.org/evandroeisinger/b.udy.js.svg?branch=master)](https://travis-ci.org/evandroeisinger/b.udy.js)
 
 > A micro DOM library! With only one purpose: facilitate the creation and manipulation of DOM elements.
 
-```javascript
+```shell
 npm install b.udy.js
 ```
 
